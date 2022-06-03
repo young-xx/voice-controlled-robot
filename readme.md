@@ -1,42 +1,44 @@
-## Readme
+# Readme
+
+## File description
 
 ### main.m
 
-主文件，包含小车运行基本功能和拓展功能。运行后可进行语音识别，控制小车前进、后退、左转、右转、识别蓝色、绿色、红色物体、倒车功能。
+Main document includes basic functions and extended functions . After operation, voice recognition can be carried out to control the car to move forward, backward, turn left, turn right, recognize blue, green, red targets and reverse. All speech commands are in Chinese
 
-#### ras_control_net.m
+#### main_English.m
 
-使用训练网络实现小车运行基本功能
+It is the main document that can be used by English speech command.
 
 #### getcolor.m
 
-识别特定颜色的函数，对输入图片进行处理，返回保留特定颜色的图片
+A function that identifies a specific color, processes the input picture, and returns a picture with a specific color
 
 #### rbz1.m
 
-红外避障程序
+Using infrared sensors to avoid obstacles
 
 #### turnleft.m、turnright.m
 
-控制小车左转右转
+Control the car to turn left and right
+
+#### ras_control_net.m
+
+It uses training network to realize basic functions, which is just for supplement
 
 #### NetTraining.m、gkc_net4.mat
 
-训练并验证语音识别卷积神经网络，得到预训练网络gkc_net4
-
-#### deployment_ras.m
-
-将语音识别模块部署到树莓派小车上
+The convolutional neural network for speech recognition is trained and verified, and the pre training network gkc_net4.mat is obtained  The gkc_net4.mat is used in ras_control_net.m.
 
 
 
-## 运行说明
+## Operating instructions
 
-运行main.m文件
+Run main.m
 
-在收到begin反馈后，发出语音指令，语音指令种类与小车对应动作如下：
+After receiving the "begin" feedback, send speech commands. The types of voice commands and corresponding actions of the car are as follows.
 
-![image-20220531151839927](image-20220531151839927.png)
+![image](https://github.com/young-xx/voice-controlled-robot/blob/supplement/image-20220602222423100.png)
 
-运行结束后使用  **system(mypi,'sudo shutdown -h now');**  将小车关机
+After running, use "system (mypi,'sudo shutdown -h now')"  to shut down the car.
 
