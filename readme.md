@@ -38,7 +38,7 @@ Run main.m
 
 After receiving the "begin" feedback, send speech commands. The types of voice commands and corresponding actions of the car are as follows.
 
-![image](https://github.com/young-xx/voice-controlled-robot/blob/add-license-1/image-20220602222423100.png)
+![image](https://github.com/young-xx/voice-controlled-robot/blob/supplement/image-20220602222423100.png)
 
 After running, use "system (mypi,'sudo shutdown -h now')"  to shut down the car.
 
